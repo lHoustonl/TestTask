@@ -26,6 +26,17 @@ namespace Test.API.Controllers
             _userTaskService = userTaskService;
         }
 
+        [HttpGet("page/{pageNumber:int}")]
+        public IActionResult GetUsers(int pageNumber)
+        {
+            var page = _userService.GetUsersPage(pageNumber);
+
+            if (page == null)
+                return BadRequest("Users not found");
+
+            return Ok(page);
+        }
+
         [HttpGet("{userId:int}")]
         public IActionResult GetUser(int userId)
         {
@@ -68,7 +79,7 @@ namespace Test.API.Controllers
             return Ok(model);
         }
 
-        [HttpPut("{userId:int}/setTask/{taskId:int}")]
+        [HttpPut("{userId:int}/set/task/{taskId:int}")]
         public IActionResult SetPerformer(int userId, int taskId)
         {
             var result = _userTaskService.SetTaskPerformer(userId, taskId);

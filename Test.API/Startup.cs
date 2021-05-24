@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Test.API.Services.TaskService;
 using Test.API.Services.UserService;
 using Test.API.Services.UserTaskService;
 using Test.DataAccess.Database;
@@ -37,7 +38,7 @@ namespace Test.API
             services.AddScoped<ITaskRepository, DefaultTaskRepository>();
             services.AddScoped<IUserService, DefaultUserService>();
             services.AddScoped<IUserTaskService, DefaultUserTaskService>();
-            //services.AddScoped<ITaskService, DefaultTaskService>();
+            services.AddScoped<ITaskService, DefaultTaskService>();
 
             //services.AddControllers().AddNewtonsoftJson(options =>
             //{

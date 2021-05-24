@@ -9,7 +9,7 @@ namespace Test.API.Services.UserService
 {
     public interface IUserService
     {
-        //IEnumerable<User> GetUsers(); TODO: Пагинация
+        IndexUserModel GetUsersPage(int page);
         User GetUser(int id);
         User UpdateUser(int id, EditUserModel editableUser);
     }

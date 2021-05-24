@@ -1,9 +1,11 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
+using System.Linq;
+using Test.Data.Models;
 
-namespace Test.Data.Models
+namespace Test.API.Models.Task
 {
-    public class Task
+    public class TaskInfoModel
     {
         public int TaskID { get; set; }
         public string Name { get; set; }
@@ -12,21 +14,7 @@ namespace Test.Data.Models
         public DateTime DateOfLastChange { get; set; }
         public TaskStatuses TaskStatus { get; set; } //Task status values: Not started, In progress, Accomplished, Canceled, Rejected
 
-        [ForeignKey("User")]
         public int? SetterID { get; set; }
-        [ForeignKey("User")]
         public int? PerformerID { get; set; }
-
-        public virtual User SetterUser { get; set; }
-        public virtual User PerformerUser { get; set; }
-    }
-
-    public enum TaskStatuses
-    {
-        NotStarted,
-        InProgress,
-        Accomplished,
-        Canceled,
-        Rejected
     }
 }

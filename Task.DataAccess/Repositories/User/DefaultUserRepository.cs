@@ -24,12 +24,6 @@ namespace Test.DataAccess.Repositories
         public async void SaveChangesAsync()
             => await db.SaveChangesAsync();
 
-        public void SetTask(User user, Task task)
-        {
-            db.Tasks.FirstOrDefault(t => t.TaskID == task.TaskID).PerformerID = user.UserID;
-        }
-        //ToDo: перенести в сервисы
-
         public void UpdateUser(User user)
             => db.Update<User>(user);
     }
