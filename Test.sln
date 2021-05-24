@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.API", "Test.API\Test.API.csproj", "{B831D6E3-77DA-41CF-82B9-C5F2F2A4775C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Data", "Test.Data\Test.Data.csproj", "{5666C570-1210-4E7E-8E30-5850EAE76020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.DataAccess", "Task.DataAccess\Test.DataAccess.csproj", "{486A8568-E8AA-4F7F-A5EE-8EC6E3977E62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B831D6E3-77DA-41CF-82B9-C5F2F2A4775C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B831D6E3-77DA-41CF-82B9-C5F2F2A4775C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B831D6E3-77DA-41CF-82B9-C5F2F2A4775C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B831D6E3-77DA-41CF-82B9-C5F2F2A4775C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5666C570-1210-4E7E-8E30-5850EAE76020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5666C570-1210-4E7E-8E30-5850EAE76020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5666C570-1210-4E7E-8E30-5850EAE76020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5666C570-1210-4E7E-8E30-5850EAE76020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486A8568-E8AA-4F7F-A5EE-8EC6E3977E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486A8568-E8AA-4F7F-A5EE-8EC6E3977E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486A8568-E8AA-4F7F-A5EE-8EC6E3977E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486A8568-E8AA-4F7F-A5EE-8EC6E3977E62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D61C0898-E731-4995-B732-A29221132AF4}
+	EndGlobalSection
+EndGlobal
